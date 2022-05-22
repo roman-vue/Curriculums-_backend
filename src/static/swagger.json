@@ -1,0 +1,48 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "description": "Curriculums",
+    "version": "1.0.0",
+    "title": "Creacion automatizada de curriculums"
+  },
+  "tags": [
+    {
+      "name": "Curriculums API",
+      "description": "Alimentar frontend para informacion de los usuarios"
+    }
+  ],
+  "servers": [
+    {
+      "url": "/"
+    }
+  ],
+  "paths": {
+    "/index": {
+      "get": {
+        "tags": [
+          "Test ruta inicial"
+        ],
+        "summary": "Add todo",
+        "requestBody": {
+          "description": "Retorna una respuesta si la conexion es corrrecta",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+               
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "404": {
+            "description": "NOT FOUND"
+          }
+        }
+      }
+    }
+  }
+}
