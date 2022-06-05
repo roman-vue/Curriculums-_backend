@@ -6,7 +6,7 @@ from flask_swagger_ui import get_swaggerui_blueprint
 
 # Inicializar flask
 app = Flask(__name__)
-BASE_PATH=app.root_path
+BASE_PATH = app.root_path
 
 #Swagger config
 SWAGGER_URL = '/Docs'
@@ -16,7 +16,6 @@ SWAGGER_BLUEPRINT = get_swaggerui_blueprint (
         'app_name':'Curriculums_ex'
     }
 )
-
 
 # Registrar Blueprints de rutas
 app.register_blueprint(SWAGGER_BLUEPRINT,url_prefix = SWAGGER_URL)
