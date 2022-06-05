@@ -1,5 +1,5 @@
-import appConfig
+from appConfig import app
 
 # Inicializar servidor
 if __name__ == '__main__':
-    appConfig.app.run(debug=True)
+    app.run()
