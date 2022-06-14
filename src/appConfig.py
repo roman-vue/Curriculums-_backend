@@ -1,7 +1,7 @@
 # Importaciones
 from flask import Flask
 from flask_pymongo import PyMongo
-from src.routes.index import index_bp 
+from routes.index import index_bp 
 from flask_swagger_ui import get_swaggerui_blueprint
 
 # Inicializar flask
